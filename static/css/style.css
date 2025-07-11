@@ -1,0 +1,189 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-weight: 600;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+.recommendation-badge {
+    font-size: 1.2em;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.recommendation-buy {
+    background-color: #28a745;
+    color: white;
+}
+
+.recommendation-sell {
+    background-color: #dc3545;
+    color: white;
+}
+
+.recommendation-hold {
+    background-color: #6c757d;
+    color: white;
+}
+
+.confidence-bar {
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.confidence-fill {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.confidence-high {
+    background-color: #28a745;
+}
+
+.confidence-medium {
+    background-color: #ffc107;
+}
+
+.confidence-low {
+    background-color: #dc3545;
+}
+
+.signal-item {
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+    border-radius: 0.25rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+}
+
+.trade-item {
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+    border-radius: 0.25rem;
+    border: 1px solid #dee2e6;
+}
+
+.trade-buy {
+    border-left: 4px solid #28a745;
+    background-color: #f8fff9;
+}
+
+.trade-sell {
+    border-left: 4px solid #dc3545;
+    background-color: #fff8f8;
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: #6c757d;
+}
+
+.error {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin: 1rem 0;
+}
+
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    margin-right: 0.5rem;
+    color: #007bff;
+}
+
+.card-body h3 {
+    margin-bottom: 0;
+}
+
+.table th {
+    border-top: none;
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.agent-decision {
+    text-align: center;
+    padding: 1rem;
+}
+
+.agent-reasoning {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.agent-reasoning ul {
+    text-align: left;
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.technical-indicators {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.indicator-item {
+    background-color: #f8f9fa;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+.indicator-label {
+    font-size: 0.8rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.indicator-value {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #495057;
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0 1rem;
+    }
+    
+    .technical-indicators {
+        grid-template-columns: 1fr 1fr;
+    }
+}
