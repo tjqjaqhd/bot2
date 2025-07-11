@@ -6,8 +6,21 @@ let portfolioData = {};
 function showAlert(title, message, type = 'info') {
     document.getElementById('alertModalTitle').textContent = title;
     document.getElementById('alertModalBody').innerHTML = message;
-    const modal = new bootstrap.Modal(document.getElementById('alertModal'));
-    modal.show();
+    
+    // Try to use Bootstrap modal, fallback to browser alert if not available
+    try {
+        if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+            const modal = new bootstrap.Modal(document.getElementById('alertModal'));
+            modal.show();
+        } else {
+            // Fallback to browser alert
+            alert(title + ': ' + message);
+        }
+    } catch (error) {
+        console.error('Error showing modal:', error);
+        // Fallback to browser alert
+        alert(title + ': ' + message);
+    }
 }
 
 function formatCurrency(amount) {
