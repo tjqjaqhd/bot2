@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "auto-trader"
+version = "0.1.0"
+description = "이벤트 구동형 자동매매 엔진"
+authors = ["Auto Trader <dev@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^1.10"
+redis = "^5.0"
+httpx = "^0.26"
+websockets = "^12.0"
+structlog = "^24.1"
+prometheus-client = "^0.17"
+duckdb = "^0.9"
+numpy = "^1.26"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
