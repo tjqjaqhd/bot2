@@ -1,0 +1,14 @@
+symbol: "BTCUSDT"
+intervals: [30, 120]
+safe_gamma: 1.8
+pov_cap: 0.05
+kelly_eta: 0.3
+fmax:
+  trend: 0.3
+  range: 0.1
+  burst: 0.2
+shock_size_factor:
+  1: 0.5
+  2: 0.0
+maker_levels: 4
+order_qty_usd: 200
